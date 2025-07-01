@@ -1,0 +1,1 @@
+let potencia = 2 ** 3; // potencia será 8 (2 * 2 * 2)
