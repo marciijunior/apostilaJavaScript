@@ -1,0 +1,1 @@
+throw new Error("Este é um erro personalizado!");

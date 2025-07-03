@@ -1,0 +1,1 @@
+throw "Algo deu errado!";
