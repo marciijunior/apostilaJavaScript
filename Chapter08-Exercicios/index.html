@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground de JavaScript - Exercícios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo-principal">Playground de Exercícios JS</h1>
+      <p>Um ambiente preparado para resolver a lista de exercícios.</p>
+    </header>
+
+    <main id="container-principal">
+      <section class="card">
+        <h2>1. Interações Simples</h2>
+        <p id="output-texto">Resultado aparecerá aqui.</p>
+        <input type="text" id="input-principal" placeholder="Digite algo..." />
+        <div class="botoes-container">
+          <button id="botao-principal">Ação Principal</button>
+          <button id="botao-secundario">Ação Secundária</button>
+          <button id="botao-reset">Resetar</button>
+        </div>
+        <img
+          id="imagem-principal"
+          src="img/img1.jpg"
+          alt="imagem a ser modificada"
+        />
+      </section>
+
+      <section class="card">
+        <h2>2. Componentes de UI</h2>
+        <div id="container-abas">
+          <div class="botoes-abas">
+            <button class="aba-link active" data-aba="aba1">Aba 1</button>
+            <button class="aba-link" data-aba="aba2">Aba 2</button>
+            <button class="aba-link" data-aba="aba3">Aba 3</button>
+          </div>
+          <div id="aba1" class="aba-conteudo active">Conteúdo da Aba 1.</div>
+          <div id="aba2" class="aba-conteudo">Conteúdo da Aba 2.</div>
+          <div id="aba3" class="aba-conteudo">Conteúdo da Aba 3.</div>
+        </div>
+        <div id="container-accordion" class="mt-20">
+          <div class="accordion-item">
+            <h3 class="accordion-pergunta">Pergunta 1?</h3>
+            <p class="accordion-resposta">Resposta da pergunta 1.</p>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-pergunta">Pergunta 2?</h3>
+            <p class="accordion-resposta">Resposta da pergunta 2.</p>
+          </div>
+        </div>
+        <button id="botao-abrir-modal" class="mt-20">Abrir Modal</button>
+        <div id="modal-container" class="hidden">
+          <div id="modal-conteudo">
+            <h3>Janela Modal</h3>
+            <p>Este é um modal simples.</p>
+            <button id="botao-fechar-modal">Fechar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3. Manipulação de Dados e Listas</h2>
+        <input
+          type="text"
+          id="input-filtro"
+          placeholder="Filtrar/Adicionar item..."
+        />
+        <ul id="lista-dinamica">
+          <li>Item Estático 1</li>
+          <li>Item Estático 2</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>4. APIs e Conteúdo Assíncrono</h2>
+        <input
+          type="text"
+          id="input-api"
+          placeholder="Digite um CEP, cidade, etc."
+        />
+        <button id="botao-buscar-api">Buscar Dados</button>
+        <div id="resultado-api" class="mt-20"></div>
+      </section>
+
+      <section class="card">
+        <h2>5. Jogos e Canvas</h2>
+        <div id="grid-jogo" class="grid-container"></div>
+        <canvas id="meu-canvas" width="400" height="200"></canvas>
+      </section>
+    </main>
+
+    <script src="scripts/ex.js"></script>
+  </body>
+</html>
