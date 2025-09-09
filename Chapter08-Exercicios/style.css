@@ -104,6 +104,11 @@ button:hover {
   background-color: var(--cor-primaria-hover);
 }
 
+.imagem-exemplo img {
+  width: 200px;
+  height: auto;
+}
+
 .botoes-container {
   margin: 20px 0;
   display: flex;
