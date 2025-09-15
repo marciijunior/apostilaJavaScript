@@ -1,14 +1,12 @@
-const todasAsPerguntas = document.querySelectorAll('.pergunta-faq');
-const todasAsRespostas = document.querySelectorAll('.resposta-faq');
+const todasAsPerguntas = document.querySelectorAll('.accordion-pergunta');
 
-function aoClicarNaPergunta(indice) {
-    const perguntaClicada = todasAsPerguntas[indice];
-    const respostaCorrespondente = todasAsRespostas[indice];
+function aoClicarNaPergunta(event) {
+    const perguntaClicada = event.currentTarget;
+    const itemDoAccordion = perguntaClicada.closest('.accordion-item');
 
-    respostaCorrespondente.classList.toggle('visivel');
-    perguntaClicada.classList.toggle('ativa');
+    itemDoAccordion.classList.toggle('active');
 }
 
-todasAsPerguntas.forEach((pergunta, indice) => {
-    pergunta.addEventListener('click', () => aoClicarNaPergunta(indice));
+todasAsPerguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', aoClicarNaPergunta);
 });
