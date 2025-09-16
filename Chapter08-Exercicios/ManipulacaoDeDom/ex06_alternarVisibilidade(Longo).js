@@ -1,12 +1,12 @@
-const botaoPrincipal = getElementById('botao-principal');
-const esconderFrase = getElementById('output-texto');
+const botaoPrincipal = document.getElementById('botao-principal');
+const textoOutput = document.getElementById('output-texto');
 
-function aoClicarNoBtn(evento) {
-    if (esconderFrase.classList.contains('hidden')) {
-        esconderFrase.classList.remove('hidden');
+function alternarVisibilidade() {
+    if (textoOutput.classList.contains('hidden')) {
+        textoOutput.classList.remove('hidden');
     } else {
-        esconderFrase.classList.add('hidden');
+        textoOutput.classList.add('hidden');
     }
 }
 
-botaoPrincipal.addEventListener('click', botaoPrincipal);
+botaoPrincipal.addEventListener('click', alternarVisibilidade);
