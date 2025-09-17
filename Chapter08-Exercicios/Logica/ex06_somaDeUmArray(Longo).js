@@ -14,5 +14,3 @@ const resultadoDaSoma = somarArrayComFor(listaDeNumeros);
 console.log('---Usando o laço de repetição---')
 console.log('A lista de numeros passado foi:', listaDeNumeros);
 console.log('A soma da lista passada foi:', resultadoDaSoma);
-
-
