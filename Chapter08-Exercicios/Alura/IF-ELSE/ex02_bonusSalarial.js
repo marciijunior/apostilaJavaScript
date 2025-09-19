@@ -25,4 +25,5 @@ function bonusSalarial(salario) {
 
 const salarioParaCalcular = 6000;
 
+
 bonusSalarial(salarioParaCalcular);

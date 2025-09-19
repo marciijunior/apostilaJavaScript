@@ -1,14 +1,15 @@
-function comparadorDeArrays(lista) {
-  const listaDefinitiva = [];
+const sequenciaFinal = [];
 
+function removerDuplicatas(lista) {
   for (let i = 0; i < lista.length; i++) {
-    if (!listaDefinitiva.includes(lista[i])) {
-      listaDefinitiva.push(lista[i]);
+    const elemento = lista[i];
+    if (!sequenciaFinal.includes(elemento)) {
+      sequenciaFinal.push(elemento);
     }
   }
-
-  return listaDefinitiva;
+  return sequenciaFinal;
 }
 
-const listaBraba = [32, 32, 33, 33, 44, 44, 43, 100];
-console.log(comparadorDeArrays(listaBraba));
+const listaSuja = [1, 2, 3, 3, 4, 4, 4, 5, 6, 7, 7, 7, 8, 9];
+console.log("A versao original da lista com duplicados é:", listaSuja);
+console.log("A lista sem duplicatas é: ", removerDuplicatas(listaSuja));
