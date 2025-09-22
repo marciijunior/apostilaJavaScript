@@ -1,0 +1,85 @@
+Lista Completa de Métodos de Array:
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 1: Métodos que Modificam o Array Original (Mutáveis)
+
+.push(item1, ..., itemN): Adiciona um ou mais elementos ao final do array.
+
+.pop(): Remove o último elemento do array e o retorna.
+
+.shift(): Remove o primeiro elemento do array e o retorna.
+
+.unshift(item1, ..., itemN): Adiciona um ou mais elementos ao início do array.
+
+.splice(início, qtdRemover, item1, ...): Altera o conteúdo de um array removendo, substituindo ou adicionando elementos em qualquer posição.
+
+.sort(funcaoDeComparacao): Ordena os elementos do array. Cuidado: Por padrão, ordena alfabeticamente. Para números, use (a, b) => a - b.
+
+.reverse(): Inverte a ordem dos elementos do array.
+
+.fill(valor, início, fim): Preenche todos os elementos do array (ou uma parte dele) com um valor estático.
+
+.copyWithin(alvo, início, fim): Copia uma sequência de elementos do array para outra posição dentro do mesmo array.
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 2: Métodos que Criam um Novo Array (Imutáveis)
+
+.map(funcao): Cria um novo array com os resultados da chamada de uma função para cada elemento.
+
+.filter(funcao): Cria um novo array com todos os elementos que passaram no teste implementado pela função.
+
+.slice(início, fim): Cria um novo array contendo uma cópia superficial de uma parte do array original.
+
+.concat(array2, ...): Cria um novo array unindo o array original com outros arrays ou valores.
+
+.flat(profundidade): Cria um novo array com todos os elementos de sub-arrays concatenados nele de forma recursiva até a profundidade especificada. Ex: [1, [2, 3]] vira [1, 2, 3].
+
+.flatMap(funcao): É uma combinação do .map() seguido por um .flat() de profundidade 1. É mais eficiente do que fazer os dois separadamente.
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 3: Métodos de Iteração (Não criam novo array)
+
+.forEach(funcao): Executa uma função para cada elemento do array. Não retorna nada (undefined).
+
+.every(funcao): Testa se todos os elementos do array passam no teste da função. Retorna true ou false.
+
+.some(funcao): Testa se pelo menos um elemento do array passa no teste da função. Retorna true ou false.
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 4: Métodos de Busca e Verificação
+
+.find(funcao): Retorna o primeiro elemento que satisfaz a condição. Retorna undefined se nada for encontrado.
+
+.findIndex(funcao): Retorna o índice do primeiro elemento que satisfaz a condição. Retorna -1 se nada for encontrado.
+
+.includes(elemento, deÍndice): Verifica se um array contém um determinado elemento. Retorna true ou false.
+
+.indexOf(elemento, deÍndice): Retorna o primeiro índice em que um elemento pode ser encontrado no array. Retorna -1 se não for encontrado.
+
+.lastIndexOf(elemento, deÍndice): Similar ao indexOf, mas busca do final para o início do array.
+
+.at(índice): Retorna o elemento no índice especificado. A grande vantagem é que aceita índices negativos para contar a partir do final. Ex: .at(-1) pega o último elemento.
+
+________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 5: Métodos de Acumulação e Junção
+
+.reduce(funcao, valorInicial): Aplica uma função "acumuladora" contra cada elemento do array para reduzi-lo a um único valor.
+
+.reduceRight(funcao, valorInicial): Idêntico ao .reduce(), mas executa do final para o início do array.
+
+.join(separador): Junta todos os elementos de um array em uma string.
+
+.toString(): Retorna uma string representando o array e seus elementos.
+
+.toLocaleString(): Retorna uma string localizada representando o array e seus elementos.
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+Grupo 6: Métodos Modernos (ES2022+) que Criam um Novo Array (Alternativas Imutáveis)
+
+.toSorted(funcaoDeComparacao): Versão do .sort() que retorna um novo array ordenado.
+
+.toReversed(): Versão do .reverse() que retorna um novo array invertido.
+
+.toSpliced(início, qtdRemover, item1, ...): Versão do .splice() que retorna um novo array com a alteração.
+
+.with(índice, valor): Retorna um novo array com o elemento no índice especificado substituído pelo novo valor.
