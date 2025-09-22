@@ -41,6 +41,8 @@ Grupo 3: Métodos de Iteração (Não criam novo array)
 
 .forEach(funcao): Executa uma função para cada elemento do array. Não retorna nada (undefined).
 
+.toLowerCase(): Transforma uma string para caracteres minúsculos.
+
 .every(funcao): Testa se todos os elementos do array passam no teste da função. Retorna true ou false.
 
 .some(funcao): Testa se pelo menos um elemento do array passa no teste da função. Retorna true ou false.

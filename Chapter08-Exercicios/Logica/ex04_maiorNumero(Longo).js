@@ -1,5 +1,5 @@
 function encontrarMaiorNumero(numeros) {
-    if (!numeros  || numeros.lenght === 0) {
+    if (!numeros || numeros.lenght === 0) {
         return null;
     }
     let maiorNumero = numeros[0];

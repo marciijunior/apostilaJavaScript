@@ -48,4 +48,3 @@ verificarAnagramas(palavra3, palavra4);
 const palavra5 = "Pedro";
 const palavra6 = "Pedro";
 verificarAnagramas(palavra5, palavra6);
-

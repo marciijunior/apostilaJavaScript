@@ -1,4 +1,4 @@
-const copiaArray = (arr) => {
+  const copiaArray = (arr) => {
   const copia = [];
   arr.forEach((elem) => {
     if (Array.isArray(elem)) {
