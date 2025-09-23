@@ -1,18 +1,22 @@
-const atualizarLista = (listaOriginal, indiceParaRemover, itemParaAdicionar) => {
-    const listaFiltrada = listaOriginal.filter((elemento, i) => {
-        return i !== indiceParaRemover;
-    });
+const atualizarListaManualmente = (listaOriginal, indiceParaRemover, itemParaAdicionar) => {
+    const novaLista = [];
+    
+    for (let i = 0; i < listaOriginal.length; i++) {
+        if (i !== indiceParaRemover) {
+            novaLista.push(listaOriginal[i]);
+        }
+    }
 
-    const listaFinal = [...listaFiltrada, itemParaAdicionar];
+    novaLista.push(itemParaAdicionar);
 
-    return listaFinal;
+    return novaLista;
 };
 
 const minhaListaDeCompras = ["maçã", "banana", "laranja", "pão"];
 const indiceARemover = 2;
 const itemAAdicionar = "leite";
 
-const listaAtualizada = atualizarLista(minhaListaDeCompras, indiceARemover, itemAAdicionar);
+const listaAtualizada = atualizarListaManualmente(minhaListaDeCompras, indiceARemover, itemAAdicionar);
 
 console.log("Lista original:", minhaListaDeCompras);
-console.log("Lista final:", listaAtualizada);
+console.log("Lista final (versão manual):", listaAtualizada);

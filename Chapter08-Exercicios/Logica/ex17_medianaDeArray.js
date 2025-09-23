@@ -5,6 +5,4 @@ const mediana = () => {
     arr.forEach((elem) => {
         Array.isArray(elem)? elemento.push(mediana(elem)):elemento.push(elem);
     });
-    
-
 }
