@@ -8,7 +8,6 @@ const arraySort = (arr) => {
 };
 
 const arrayUm = [4, 6, 1, 7, 2, 3, 3, 9];
-
 const resultado = arraySort(arrayUm);
 
 console.log("Array Original:", arrayUm);
