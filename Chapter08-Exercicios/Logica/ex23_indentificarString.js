@@ -1,5 +1,0 @@
-const identificarStrings = () => {
-    const pares = {
-
-    }
-}
