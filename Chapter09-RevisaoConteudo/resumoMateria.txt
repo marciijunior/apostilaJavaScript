@@ -1,0 +1,18 @@
+---- JavaScript ----
+
+Multiparadigma(OO, Imperativo, Funcional);
+
+O código é executado linha por linha de cima para baixo;
+A linguagem é case sensitive;
+Tipagem fraca;
+O ponto e vírgula é sim opcional, porém é uma boa prática;
+
+---- Tipos de dados ----
+
+No JavaScript temos diversos tipos de dados, os mais comuns e utilizados são:
+Number, String, Boolean, null e undefined, Object;
+Podemos verificar o tipo do dado com o operador typeof;
+
+Number:
+Dado para números;
+Não existe um tipo definido para inteiros, todo número é um Number;

@@ -1,6 +1,0 @@
----- JavaScript ----
-
-Tipagem fraca;
-Multiparadigma(OO, Imperativo, Funcional);
-
-JavaScript != Java
