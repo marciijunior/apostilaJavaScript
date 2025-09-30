@@ -89,3 +89,110 @@ class Carrinho {
 ----------------------------------------------------------------------------------------------------------
 
 Conceito Aprendido: Uma Classe é um molde para criar objetos.
+
+__________________________________________________________________________________________________________
+
+Aula 4 - Construindo a Partir da Planta (O constructor e o new)
+
+Ok, temos a planta. Como construímos um carrinho de verdade?
+Usamos o constructor (o processo de construção) e a palavra new (a ordem para construir).
+
+O constructor é um método especial que é executado uma vez para inicializar cada novo objeto.
+
+----------------------------------------------------------------------------------------------------------
+class Carrinho {
+  constructor() {
+    // 'this' aqui significa "o objeto novinho em folha que está a ser construído".
+    // Estamos a dizer: "Todo o novo carrinho deve começar com uma
+    // lista de items vazia e um subtotal de zero."
+    this.items = [];
+    this.subtotal = 0.0;
+  }
+}
+
+// A Mágica Acontece Aqui:
+const carrinhoDaAna = new Carrinho(); // Constrói um carrinho para a Ana.
+const carrinhoDoJoao = new Carrinho(); // Constrói OUTRO carrinho para o João.
+
+carrinhoDaAna.items.push("Maçã");
+console.log(carrinhoDaAna.items);  // Saída: [ 'Maçã' ]
+console.log(carrinhoDoJoao.items); // Saída: [] (O carrinho do João está independente e vazio!)
+----------------------------------------------------------------------------------------------------------
+
+Conceitos Aprendidos:
+
+- O constructor inicializa o estado de um novo objeto.
+
+- A palavra new cria uma instância (um objeto real) a partir de uma classe.
+
+- Cada instância é independente da outra.
+
+__________________________________________________________________________________________________________
+
+Aula 5: Dando Habilidades aos Carrinhos (Métodos e o this)
+
+Agora que os nossos carrinhos têm dados (items, subtotal), eles precisam de ter habilidades (métodos). Vamos adicionar os métodos à nossa planta.
+
+----------------------------------------------------------------------------------------------------------
+class Carrinho {
+  constructor() {
+    this.items = [];
+    this.subtotal = 0.0;
+  }
+
+  // Adicionando um método à planta
+  adicionarItem(item) {
+    // 'this' aqui é CRUCIAL. Ele diz: "adicione à lista de items
+    // DESTA instância específica que me chamou".
+    this.items.push(item);
+    // (e a outra lógica...)
+  }
+}
+
+const carrinhoDaAna = new Carrinho();
+carrinhoDaAna.adicionarItem({ nome: "Leite", preco: 5.0 }); // 'this' aqui dentro é 'carrinhoDaAna'
+
+const carrinhoDoJoao = new Carrinho();
+carrinhoDoJoao.adicionarItem({ nome: "Pão", preco: 2.0 }); // 'this' aqui dentro é 'carrinhoDoJoao'
+----------------------------------------------------------------------------------------------------------
+
+Conceito Aprendido: Métodos são definidos na classe para dar comportamento aos objetos. O this garante que o método atue apenas nos dados da instância que o chamou.
+
+__________________________________________________________________________________________________________
+
+Aula 6: O Grande Final - A Nossa Classe Carrinho Completa
+
+Agora, juntamos tudo. Pegamos na nossa planta Carrinho, no nosso constructor e em todos os métodos do exercício original.
+
+O resultado é a solução final e correta que vimos antes:
+
+----------------------------------------------------------------------------------------------------------
+class Carrinho {
+  constructor() {
+    this.items = [];
+    this.subtotal = 0.0;
+  }
+
+  adicionarItem(item) { /* ...código completo... */ }
+  removerItem(indice) { /* ...código completo... */ }
+  recalcularSubtotal() { /* ...código completo... */ }
+  mostrarResumo() { /* ...código completo... */ }
+}
+
+// E a utilização é a criação de uma instância e a chamada dos seus métodos.
+const meuCarrinho = new Carrinho();
+meuCarrinho.adicionarItem({ nome: "Headphone", preco: 249.9 });
+meuCarrinho.mostrarResumo();
+----------------------------------------------------------------------------------------------------------
+
+Você acaba de percorrer o caminho completo do pensamento orientado a objetos:
+
+Identificou a necessidade de agrupar dados e funções (Objeto).
+
+Identificou a necessidade de reutilização e padronização (Classe).
+
+Aprendeu a criar objetos independentes a partir do molde (new e constructor).
+
+Aprendeu a dar comportamento a esses objetos de forma que eles manipulem os seus próprios dados (Métodos e this).
+
+__________________________________________________________________________________________________________

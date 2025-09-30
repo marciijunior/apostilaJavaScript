@@ -16,3 +16,16 @@ Podemos verificar o tipo do dado com o operador typeof;
 Number:
 Dado para números;
 Não existe um tipo definido para inteiros, todo número é um Number;
+
+---- Undefined e Null ----
+
+Undefined e Null também são consideradas tipos de dados;
+O null é um tipo de dado que representa um valor;
+O undefined é um tipo de dado para uma variável com valor não atribuído;
+
+---- Objetos ----
+
+Funcionam como um array associativo de outras linguagens;
+Podemos criar propriedades com chave e valor;
+A ideia é guardar um conjunto de valores para utilizar posteriormente;
+
