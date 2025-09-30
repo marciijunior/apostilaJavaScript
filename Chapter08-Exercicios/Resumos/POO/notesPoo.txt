@@ -1,0 +1,91 @@
+Aula 00 - Programação Orientada a Objetos -
+
+Caso não existisse a poo, tudo seria resolvido através de funções e variáveis "soltas".
+O problema gerado por isso: Gerir os dados de um carrinho de compra.
+
+----------------------------------------------------------------------------------------------------------
+// DADOS
+let itemsDoCarrinho = [];
+let subtotalDoCarrinho = 0.0;
+
+// COMPORTAMENTOS (FUNÇÕES)
+function adicionar(item) {
+    itemsDoCarrinho.push(item);
+    // ... lógica para recalcular o subtotal, etc.
+}
+
+function remover(indice) {
+    itemsDoCarrinho.splice(indice, 1);
+    // ... lógica para recalcular...
+}
+----------------------------------------------------------------------------------------------------------
+
+Análise: Funciona? Sim. Mas é frágil e desorganizado. Os dados (itemsDoCarrinho) estão completamente separados das funções (adicionar) que operam neles. Se quiséssemos ter um segundo carrinho, seria um pesadelo.
+
+Conceito Aprendido: Precisamos de uma forma de agrupar dados e comportamentos que estão relacionados.
+
+__________________________________________________________________________________________________________
+
+Aula 01 - A primeira solução - O Objeto Literal
+
+Um objeto é exatamente isso: um "pacote" que agrupa propriedades (dados) e métodos (comportamentos).
+
+----------------------------------------------------------------------------------------------------------
+// OBJETO 
+const carrinho = {
+    items: [],
+    subtotal: 0.0,
+    adicionarItem(item) {
+        // ...
+    }
+};
+----------------------------------------------------------------------------------------------------------
+
+Análise: Muito melhor! Agora, os dados (items, subtotal) e as funções que os manipulam (adicionarItem) vivem juntos no mesmo "pacote". Isso é Encapsulamento na sua forma mais básica.
+
+Conceito Aprendido: Objetos organizam nosso código agrupando dados e funções relacionadas.
+
+__________________________________________________________________________________________________________
+
+Aula 02 - O Novo Problema - Como Criar Vários Carrinhos?
+
+A nossa solução com objeto literal é ótima, mas só temos um carrinho. E se a Ana e o João estivessem a fazer compras ao mesmo tempo no nosso site? Precisaríamos de dois carrinhos independentes.
+
+A Tentativa Ruim: Copiar e colar o objeto.
+
+----------------------------------------------------------------------------------------------------------
+const carrinhoDaAna = {
+    items: [],
+    subtotal: 0.0,
+    adicionarItem(item) {
+        // ...
+    }
+};
+
+const carrinhoDoJoao = {
+    items: [],
+    subtotal: 0.0,
+    adicionarItem(item) {
+        // ...
+    }
+};
+----------------------------------------------------------------------------------------------------------
+
+Análise: Isto é terrível. Se encontrarmos um erro no método removerItem, teremos que o corrigir em todos os carrinhos que copiámos. Violamos o princípio "Don't Repeat Yourself" (DRY).
+
+Conceito Aprendido: Precisamos de um molde ou uma planta para criar carrinhos, em vez de construir cada um do zero.
+
+__________________________________________________________________________________________________________
+
+Aula 03 - A Solução Elegante - A Classe (A Planta)
+
+A Classe é essa planta. É um modelo que define como todos os carrinhos devem ser. Não é um carrinho de verdade, mas sim a ideia de um carrinho.
+
+----------------------------------------------------------------------------------------------------------
+class Carrinho {
+    // Aqui dentro vamos definir a estrutura e os comportamentos
+    // que TODOS os carrinhos terão.
+}
+----------------------------------------------------------------------------------------------------------
+
+Conceito Aprendido: Uma Classe é um molde para criar objetos.
