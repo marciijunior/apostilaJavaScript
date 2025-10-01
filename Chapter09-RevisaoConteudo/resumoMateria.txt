@@ -106,4 +106,16 @@ Funções são blocos de códigos reutiláveis;
 Ou seja, evitamos a repetição da lógica de um program em diversas partes do códigos;
 A função precisa ser invocada para ser executada;
 
-----
+---- Elementos DOM ----
+
+document.createElement():
+Cria elementos html.
+Exemplo: document.createElement('ul');
+
+document.getElementByTagName():
+Seleciona tags.
+Exemplo: document.getElementByTagName('body');
+
+appendChild():
+Inseri um elemento filho.
+Exemplo: body[0].appendChild(listaUl);
