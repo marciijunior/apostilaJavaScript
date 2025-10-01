@@ -1,7 +1,6 @@
 ---- JavaScript ----
 
-Multiparadigma(OO, Imperativo, Funcional);
-
+Multiparadigma(OO, Imperativo, Funcional):
 O código é executado linha por linha de cima para baixo;
 A linguagem é case sensitive;
 Tipagem fraca;
@@ -28,4 +27,70 @@ O undefined é um tipo de dado para uma variável com valor não atribuído;
 Funcionam como um array associativo de outras linguagens;
 Podemos criar propriedades com chave e valor;
 A ideia é guardar um conjunto de valores para utilizar posteriormente;
+
+---- Array ----
+
+Na verdade os arrays são considerados objetos em JavaScript, porém servem como lista;
+Podemos ter itens de qualquer tipo de dado também;
+Porém não por chave e valor, e sim por índice;
+
+---- Condicional: if ----
+
+Executa um bloco de código se a instrução for verdadeira;
+Se for falsa, segue o códico normalmente;
+Lembrando que: true e false são do tipo Boolean;
+
+---- Condicional: else e else if ----
+
+Caso a instrução de if seja negativa, podemos adicionar else;
+Que será a outra condicional a ser executada;
+Podemos então criar um bifurcação no código;
+Já o else if tem a possibilidade de fazer outra verificação e adiocionar mais um bloco de código;
+
+---- Operações de comparação ----
+
+São comumente utilizados para a verificação nas estruturas de condição;
+Temos os seguintes operadores: ==, !=, >, <, >=, <=;
+A partir de uma expressão de comparação podemos obter um true ou false;
+
+---- Operadores Lógicos ----
+
+And "&&":
+Nas linguagens de programação existem os operadores lógicos;
+Estes operadores realizam comparações para que seja retornado um true ou false;
+Decidindo então o fluxo da aplicação;
+Utilizamos principalmente nas instruções de condição e repetição, em conjunto dos operadores de comparação;
+
+Or "||":
+O operador lógico || é conhecido também como OR;
+Ele retorna true caso uma das operações retorne verdadeiro;
+O OR retorna false apenas se as duas expressões são falsas;
+
+Not "!":
+O operador lógico! é conhecido também como NOT;
+Este operador muda o valor que a expressão retornou;
+Se recebeu true vira false, se recebeu false vira true;
+
+---- Operadores de atribuição ----
+
+Temos algumas maneiras de atribuir um valor a uma variável;
+As mais utilizadas são: +=, -=, *=, /=;
+Basicamente é uma forma resumida da operação: x=x+y;
+Em loops também é comum utilizar os operadores ++ ou --;
+
+---- Estruturas de repetição ----
+
+Estas estruturas servem para repetir n vezes uma operação;
+Por exemplo: repetir uma determinada lógica em cada elemento de um array;
+As estruturas mais comuns são: while e for;
+Obs: tomar muito cuidado com loop infinito;
+
+While:
+O while é a estrutura de repetição mais simples do JavaScript;
+A ideia é que se repita até atingir tal condição;
+While -> Enquanto;
+
+For:
+O for tem uma sintaxe mais complexa, mas é optado pela maioria dos programadores;
+Apesar de pare mais difícil, como a instrução fica toda em um linha proporciona maior controle;
 
