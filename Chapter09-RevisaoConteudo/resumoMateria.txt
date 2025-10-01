@@ -94,3 +94,16 @@ For:
 O for tem uma sintaxe mais complexa, mas é optado pela maioria dos programadores;
 Apesar de pare mais difícil, como a instrução fica toda em um linha proporciona maior controle;
 
+---- Break e Continue ----
+
+Com break podemos encerrar uma instrução;
+Com o continue podemos pular uma instrução;
+Utilizamos na maioria das vezes em loops;
+
+---- Funções ----
+
+Funções são blocos de códigos reutiláveis;
+Ou seja, evitamos a repetição da lógica de um program em diversas partes do códigos;
+A função precisa ser invocada para ser executada;
+
+----
