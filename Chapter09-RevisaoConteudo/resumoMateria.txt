@@ -119,3 +119,7 @@ Exemplo: document.getElementByTagName('body');
 appendChild():
 Inseri um elemento filho.
 Exemplo: body[0].appendChild(listaUl);
+
+---- Escopo em JavaScript ----
+
+No JavaScript podemos ter vários escopos; O global, que é iniciado
