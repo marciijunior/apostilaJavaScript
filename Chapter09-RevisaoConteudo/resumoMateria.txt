@@ -133,4 +133,13 @@ Deixando o código mais confiável;
 Separando cada bloco em um escopo;
 Foram adicionados no ESC JavaScript;
 
----- 
+---- Métodos Numéricos ----
+
+O objeto Number, pai dos números, contém métodos muito úteis para trabalhar com números em JS;
+A maioria dos tipos de dado também tem um objetos pai, como: String, Object e Array;
+
+---- Métodos de String ----
+
+O objeto String também possui métodos muito úteis;
+Que vão nos auxiliar a manusear nossos códigos;
+
