@@ -137,9 +137,47 @@ Foram adicionados no ESC JavaScript;
 
 O objeto Number, pai dos números, contém métodos muito úteis para trabalhar com números em JS;
 A maioria dos tipos de dado também tem um objetos pai, como: String, Object e Array;
+Métodos usados:
+.parseFloat();
+.parseInt();
+.toFixed();
+.isNaN();
+.MAX_VALUE;
+.MIN_VALUE;
 
 ---- Métodos de String ----
 
 O objeto String também possui métodos muito úteis;
 Que vão nos auxiliar a manusear nossos códigos;
+Os métodos de string também auxiliam na sua modificação;
+Podemos por exemplo deixar a fonte em caixa alta ou baixa com JS;
+.length
+.indexOf()
+.slice()
+.replace()
 
+---- Métodos de array ----
+
+Os arrays também possuem métodos;
+Facilitam a nossa vida para: adicionar e remover elementos, resgatar apenas uma parte do array e etc;
+Podemos também resgatar um conjunto de elementos com os métodos;
+Identificar o índice de um elemento específico e muito mais;
+.length()
+.push()
+.unshift()
+.shift()
+.isArray()
+.splice(begin, del, numToAdd)
+.indexOf()
+.join()
+.reverse()
+
+---- Objeto II ----
+
+Como você pode perceber muitos tipos de dados tem métodos e propriedades;
+Podemos criar também os nossos objetos com propriedades e métodos para auxiliar nos nossos programas;
+
+---- this ----
+
+Fora de escopos locais, o this sempre se refere ao objeto global Window(Objeto global), isso reforça que tudo no JS é objeto;
+Em objetos, o this vai se referir a instância e pode acessar suas propriedades;

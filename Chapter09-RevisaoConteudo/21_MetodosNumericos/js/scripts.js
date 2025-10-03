@@ -1,5 +1,6 @@
 // parseFloat 10.0
 
+console.log(parseFloat("12"));
 console.log(parseFloat("12.123"));
 console.log(Number.parseFloat("12.123")); // É a mesma cois que sem, acima ele está subintendido;
 
