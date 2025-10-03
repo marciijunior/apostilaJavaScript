@@ -122,4 +122,15 @@ Exemplo: body[0].appendChild(listaUl);
 
 ---- Escopo em JavaScript ----
 
-No JavaScript podemos ter vários escopos; O global, que é iniciado
+No JavaScript podemos ter vários escopos;
+O global é iniciado em toda a aplicação;
+E os locais, que podem existir em várias instruções como as funções;
+
+---- Let, Const e Escopos ----
+
+Utilzando let e const podemos criar escopo até em instruções como if;
+Deixando o código mais confiável;
+Separando cada bloco em um escopo;
+Foram adicionados no ESC JavaScript;
+
+---- 
