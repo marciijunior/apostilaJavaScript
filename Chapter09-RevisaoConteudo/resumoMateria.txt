@@ -106,20 +106,6 @@ Funções são blocos de códigos reutiláveis;
 Ou seja, evitamos a repetição da lógica de um program em diversas partes do códigos;
 A função precisa ser invocada para ser executada;
 
----- Elementos DOM ----
-
-document.createElement():
-Cria elementos html.
-Exemplo: document.createElement('ul');
-
-document.getElementByTagName():
-Seleciona tags.
-Exemplo: document.getElementByTagName('body');
-
-appendChild():
-Inseri um elemento filho.
-Exemplo: body[0].appendChild(listaUl);
-
 ---- Escopo em JavaScript ----
 
 No JavaScript podemos ter vários escopos;
@@ -181,3 +167,36 @@ Podemos criar também os nossos objetos com propriedades e métodos para auxilia
 
 Fora de escopos locais, o this sempre se refere ao objeto global Window(Objeto global), isso reforça que tudo no JS é objeto;
 Em objetos, o this vai se referir a instância e pode acessar suas propriedades;
+
+---- DOM ---- 
+
+Document Object Model;
+Uma interface de programação para HTML;
+Por meeio dele temos métdos para acessar a árvore de elementos;
+O DOM fornece uma cópia do HMTL;
+Podemos manipular eventos pelo DOM para afetar o HTML;
+Acessar o DOM caracteza-se por identificar um elemento do HTML através de métodos;
+Depois podemos manipulá-los da forma que quisermos;
+Acessar o DOM é semelhante as regras de CSS;
+Podemos acessar por : tags, ids, classes;
+Com a evolução da linguagem, foram criados dois seletores que acabam com toda a complexidade desta ação;
+querySelector e querySelectorAll;
+Com estes podemos acessar os elementos baseados em regras de CSS;
+
+---- Elementos DOM ----
+
+document.createElement():
+Cria elementos html.
+Exemplo: const criarUl = document.createElement('ul');
+
+document.getElementByTagName():
+Seleciona tags.
+Exemplo: const listaBody = document.getElementByTagName('body');
+
+appendChild():
+Inseri um elemento filho.
+Exemplo: body[0].appendChild(listaUl);
+
+document.getElementById():
+Seleciona determinado id, caso receba mais de um, retorna somente o primeiro.
+Exemplo: const paragrafo = document.getElementById('paragrafo');
